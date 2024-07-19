@@ -34,6 +34,12 @@ docker compose up
 - Senha: postgre
 
 **4. Atualizar as imagens:**
+Importar o TypeORM no arquivo app.module.ts
+```
+imports: [TypeOrmModule.forRoot(typeOrmConfig), TasksModule],
+```
+
+**5. Atualizar as imagens:**
 ```
 docker compose up --build
 ```

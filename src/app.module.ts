@@ -8,7 +8,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(typeOrmConfig), TasksModule],
+  // imports: [TypeOrmModule.forRoot(typeOrmConfig), TasksModule],
+  imports: [],
   exports: [AppService],
   controllers: [AppController],
   providers: [AppService, AppController],
