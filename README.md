@@ -6,40 +6,12 @@
 
 ---
 
-# Como inicializar o Projeto
-Para inicializar o projeto é necessário ter o Docker Engine ou o Docker Desktop instalado.
+# Projetos
 
-**1. Clonar o projeto**
+Construímos 3 projetos usando o Docker partindo de um simples "Hello World" até uma API REST usando Nest JS, TypeORM e PostgreSQL
 
-```
-git clone git@github.com:duccini/codigocerto-docker.git
-```
+## Projeto 1: hello-world
 
-ou
+## Projeto 2: nest-docker
 
-```
-git clone https://github.com/duccini/codigocerto-docker.git
-```
-
-**2. Criar as imagens Docker:**
-```
-docker compose up
-```
-
-**3. Criar a base de dados**
-- Abrir o pgAdmin: http://localhost:5050
-- Nomear o server, pode ser qualquer nome, NestJS Docker
-- Host: db
-- user: postgre
-- Senha: postgre
-
-**4. Atualizar as imagens:**
-Importar o TypeORM no arquivo app.module.ts
-```
-imports: [TypeOrmModule.forRoot(typeOrmConfig), TasksModule],
-```
-
-**5. Atualizar as imagens:**
-```
-docker compose up --build
-```
+## Projeto 3: api-app
