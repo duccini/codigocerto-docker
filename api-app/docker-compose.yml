@@ -21,7 +21,7 @@ services:
     environment:
       - PORT=${PORT}
     ports:
-      - '3000:3000'
+      - '10000:3000'
     depends_on:
       - db
     volumes:
